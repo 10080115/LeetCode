@@ -1,0 +1,27 @@
++----+-------+--------+-----------+
+| Id | Name  | Salary | ManagerId |
++----+-------+--------+-----------+
+| 1  | Joe   | 70000  | 3         |
+| 2  | Henry | 80000  | 4         |
+| 3  | Sam   | 60000  | NULL      |
+| 4  | Max   | 90000  | NULL      |
++----+-------+--------+-----------+
+
++----------+
+| Employee |
++----------+
+| Joe      |
++----------+
+
+
+SELECT E1.Name AS Employee
+FROM Employee AS E1,
+     Employee AS E2
+WHERE E1.ManagerId = E2.Id
+ AND E1.Salary > E2.Salary;
+
+
+SELECT onlyeEmployee.Name AS Employee
+FROM Employee AS onlyeEmployee
+JOIN Employee AS Manager ON onlyeEmployee.ManagerId = Manager.Id
+WHERE onlyeEmployee.Salary > Manager.Salary;
