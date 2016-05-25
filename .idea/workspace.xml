@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cdda727-f43a-4d53-94ba-e5b1360dd11b" name="Default" comment="">
+    <list default="true" id="4cdda727-f43a-4d53-94ba-e5b1360dd11b" name="Default" comment="测试信息2">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="leetCodeA.iws" />
@@ -1054,7 +1054,7 @@
       <workItem from="1462283770653" duration="5287000" />
       <workItem from="1462365353051" duration="1654000" />
       <workItem from="1463031684922" duration="45000" />
-      <workItem from="1464157849865" duration="1142000" />
+      <workItem from="1464157849865" duration="1179000" />
     </task>
     <task id="LOCAL-00001" summary="测试信息">
       <created>1464158248489</created>
@@ -1070,11 +1070,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464158966056</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试信息2">
+      <created>1464159028583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1464159028583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45855000" />
+    <option name="totallyTimeSpent" value="45892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="126" y="27" width="1440" height="672" extended-state="0" />
@@ -1122,7 +1129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="测试信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试信息" />
+    <MESSAGE value="测试信息2" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试信息2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
