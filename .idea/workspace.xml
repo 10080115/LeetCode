@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cdda727-f43a-4d53-94ba-e5b1360dd11b" name="Default" comment="" />
+    <list default="true" id="4cdda727-f43a-4d53-94ba-e5b1360dd11b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="leetCodeA.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,8 +123,8 @@
       <file leaf-file-name="MissingNumber.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/MissingNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="323">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -224,10 +226,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="770" />
-    <option name="y" value="222" />
+    <option name="x" value="126" />
+    <option name="y" value="27" />
     <option name="width" value="1440" />
-    <option name="height" value="674" />
+    <option name="height" value="672" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1052,7 +1054,7 @@
       <workItem from="1462283770653" duration="5287000" />
       <workItem from="1462365353051" duration="1654000" />
       <workItem from="1463031684922" duration="45000" />
-      <workItem from="1464157849865" duration="534000" />
+      <workItem from="1464157849865" duration="1142000" />
     </task>
     <task id="LOCAL-00001" summary="测试信息">
       <created>1464158248489</created>
@@ -1061,14 +1063,21 @@
       <option name="project" value="LOCAL" />
       <updated>1464158248489</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试信息">
+      <created>1464158966056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464158966056</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45247000" />
+    <option name="totallyTimeSpent" value="45855000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="770" y="222" width="1440" height="674" extended-state="0" />
+    <frame x="126" y="27" width="1440" height="672" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1441,8 +1450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/MissingNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="323">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>
