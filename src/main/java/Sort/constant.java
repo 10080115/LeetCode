@@ -7,6 +7,8 @@ public class constant {
     public static final int[] arr = {3, 5, 7, 9, 2, 4, 8, 10, 1, 2};
 
     public static void swap(int[] arr, int i, int j) {
-
+        int swap = arr[i];
+        arr[i] = arr[j];
+        arr[j] = swap;
     }
 }
