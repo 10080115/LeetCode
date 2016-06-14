@@ -7,6 +7,7 @@ public class FullArray {
     static int n = 0;
 
     public static void perm(int[] list, int k, int m) {
+        //0、4
         int i;
         if (k == m) {
             for (i = 0; i <= m; i++)
