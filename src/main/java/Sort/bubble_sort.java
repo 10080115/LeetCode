@@ -22,8 +22,6 @@ public class bubble_sort {
     public static void main(String[] args) {
         int[] arr = constant.arr;
         bubble_sort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        constant.for_each(arr);
     }
 }
