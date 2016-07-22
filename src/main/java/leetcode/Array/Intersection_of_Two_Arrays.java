@@ -18,7 +18,7 @@ Note:
 Each element in the result must be unique.
 The result can be in any order.
 
-定义了一个hashset来存元素
+返回两个数组有什么共同的元素
  */
 public class Intersection_of_Two_Arrays {
     public int[] intersection(int[] nums1, int[] nums2) {
