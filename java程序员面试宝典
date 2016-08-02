@@ -1,0 +1,143 @@
+411 Java语言有哪些优点
+1、纯面向对象的
+2、平台无关性
+3、Java提供了更多的内置库
+4、web应用开发支持
+5、具有较好的安全性和健壮性
+
+412 Java和C++有什么区别
+1、都是面向对象的语言,使用了面向对象的思想(封装继承多态)
+
+1、Java为解释性语言 java源代码 -》Java编译器 -》 字节码 然后由JVM执行
+2、C++为编译型语言
+
+
+413 为什么需要psvm这个函数
+static 是静态方法 方法中的代码存储在静态存储区,只要类被加载之后 就可以使用
+该方法 而不需要实例化对象的操作
+
+public 和 static 没有先后的顺序 也可以把main函数定义成final的 也可以用syn进行
+修饰 不管哪种方法 main函数必须是void类型的 而且不能带有abstract修饰
+同时一个.java源文件 可以有多个main函数 但是只有与文件名同名的class类的main函数是
+主要执行的
+
+414 在main方法前如何输出helloworld
+利用static静态代码块 可以保证在main函数之前输出
+
+415 Java程序的初始化顺序
+父类的静态变量、父类的静态代码块、子类的静态变量、子类的静态代码块、
+父类的非静态变量、父类的非静态代码块、父类的构造函数
+子类的非静态变量、子类的非静态代码块、子类的构造函数
+
+
+416Java中的作用域有哪些
+Java语言中变量类型分为3大类
+1、成员变量
+类的成员变量的声明周期和类的实例化对象的作用范围是相同的、当类被实例化时、
+成员变量会在内存中分配空间并初始化,直到这个被实例化对象的声明周期的结束,成员变量的周期才结束。
+
+2、静态变量
+不依赖于对象的实例化 被所有类的实例所共享 只要一个类被加载 JVM就会给类变量分配存储空间,
+通过类名和变量名来访问变量.
+
+3、局部变量
+成员变量的作用域
+
+             当前类 package 子类  其他package
+public         *      *     *       *
+protected      *      *     *
+default        *      *
+private        *
+
+ppdp 当前类
+     同一package
+     子类
+     其他package
+
+417一个java文件是否可以多个类
+可以多个类 但是只能有有个public类 和 文件名称相同
+
+418什么是构造函数
+1、构造函数必须和类名相同 不能有返回值 也不能是voidl类型的
+2、有默认的构造函数,但是构造函数不会执行任何东西 如果提供了构造函数
+   那么编译器将不再提供默认的构造函数
+3、构造函数可以多个参数
+4、构造函数不能被显性调用 主有当对象初始化的时候 才能被调用
+
+427重载和覆盖有什么区别
+重在Overload 覆盖Override代表了多态的不同表现形式
+重载(Overload)是一个类中的 依靠参数来进行改变
+重写(Override)是多个类中的
+
+class Fu {
+ intnum = 5;
+static void method4() {
+ System.out.println("fu method_4");
+ }
+void method3() {
+ System.out.println("fu method_3");
+ }
+}
+class Zi extends Fu {
+ intnum = 8;
+static void method4() {
+ System.out.println("zi method_4");
+ }
+void method3() {
+ System.out.println("zi method_3");
+ }
+}
+class DuoTaiDemo4 {
+ public static void main(String[] args) {
+Fu f = new Zi();
+ System.out.println(f.num);//与父类一致
+ f.method4();//与父类一致
+ f.method3();//编译时与父类一致，运行时与子类一致
+  Ziz = new Zi();
+ System.out.println(z.num);
+ z.method4();
+ z.method3();
+ }
+}
+输出结果：
+5
+fu method_4
+zi method_3
+8
+zi method_4
+zi method_3
+
+A：成员变量：编译和运行都看Fu。
+B：非静态方法：编译看Fu，运行看Zi
+C：静态方法：编译和运行都看Fu。
+
+
+428抽象类和接口的异同之处(简单来说就是PA)
+相同点
+    都不能被实例化
+    接口的实现类和抽象类的子类实现或者集成后才能实例化
+不同点
+    接口只有定义。不能有实现,抽象类,既可以定义,也可以有实现
+    一个类可以实现多个接口,但只能继承一个抽象类
+    接口 has a 抽象类 is a的关系
+    接口的成员变量都是 public static final 类型的 而且必须进行
+    初始化赋值,函数名都是public abstract的
+
+433 final finally finalize
+
+435 单例模式
+static 函数里面 不能调用 非static的函数 因为static加载了
+但是函数还有可能没有加载 所以就是不能用了
+
+//懒汉式单例
+public class Singleton {
+    private Singleton() {}
+    private static Singleton single=null;
+    //静态工厂方法
+    public static Singleton getInstance() {
+         if (single == null) {
+             single = new Singleton();
+         }
+        return single;
+    }
+}

@@ -13,33 +13,33 @@ public class InvertBinaryTree {
     //尽量利用offer进行插入
     //利用poll进行删除元素
     //利用栈进行深度优先遍历
-    public TreeNode invertTree(TreeNode root) {
-        if(root==null)
-            return null;
-        Deque<TreeNode> stack = new LinkedList<TreeNode>();
-        stack.push(root);
-        while(!stack.isEmpty()){
-            TreeNode tmp = stack.pop();
-            TreeNode left = tmp.left;
-            TreeNode right = tmp.right;
-            //swap
-            tmp.left = right;
-            tmp.right = left;
-            if(tmp.left!=null)
-                stack.push(tmp.left);
-            if(tmp.right!=null)
-                stack.push(tmp.right);
-        }
-        return root;
-    }
+//    public TreeNode invertTree(TreeNode root) {
+//        if(root==null)
+//            return null;
+//        Deque<TreeNode> stack = new LinkedList<TreeNode>();
+//        stack.push(root);
+//        while(!stack.isEmpty()){
+//            TreeNode tmp = stack.pop();
+//            TreeNode left = tmp.left;
+//            TreeNode right = tmp.right;
+//            //swap
+//            tmp.left = right;
+//            tmp.right = left;
+//            if(tmp.left!=null)
+//                stack.push(tmp.left);
+//            if(tmp.right!=null)
+//                stack.push(tmp.right);
+//        }
+//        return root;
+//    }
 
     //反转二叉树
     public TreeNode invertTree2(TreeNode root) {
-        if(root==null)
+        if (root == null)
             return root;
-        TreeNode right = root.right;
+        TreeNode temp = root.right;
         root.right = invertTree2(root.left);
-        root.left= invertTree2(right);
+        root.left = invertTree2(temp);
         return root;
     }
 

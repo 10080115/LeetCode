@@ -7,22 +7,25 @@ package Sort;
 //插入排序
 //稳定排序 复杂度O(n^2)
 public class insert_sort {
-    public static void insert_sort(int[] arr) {
-
-        //总共进行的轮数
-        for (int i = 1; i < arr.length; i++) {
-            int start_pos = i;
-            int target = arr[start_pos];
-            while (start_pos > 0 && target < arr[start_pos - 1]) {
-                arr[start_pos] = arr[start_pos - 1];
-                start_pos--;
+    void insert_sort(int[] arr) {
+        int n = arr.length;
+        int k = 0;
+        for (int i = 1; i < n; i++) {
+            //证明这时候要有元素整体向后移动
+            if (arr[i] < arr[i - 1]) {
+                int temp = arr[i];
+                for (k = i - 1; k >= 0 && arr[k] > temp; k--) {
+                    arr[k + 1] = arr[k];
+                }
+                arr[k + 1] = temp;
             }
-            arr[start_pos] = target;
         }
     }
 
     public static void main(String[] args) {
         int[] arr = constant.arr;
-        insert_sort(arr);
+        new insert_sort().insert_sort(arr);
+        for (int num : arr)
+            System.out.print(num + " ");
     }
 }
